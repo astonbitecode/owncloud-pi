@@ -15,7 +15,7 @@ This is a docker container of [owncloud](https://owncloud.org/) that runs on the
 
 ## Installation
 
-1. Install docker from the package repository: 
+1. Install docker from the package repository (eg. for Arch Linux): 
 
 	`sudo pacman -S docker`
 
