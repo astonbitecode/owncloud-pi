@@ -15,17 +15,17 @@ This is a docker container of [owncloud](https://owncloud.org/) that runs on the
 
 ## Installation
 
-1. Install docker from the package repository (eg. for Arch Linux): 
+1. Install docker from the package repository: 
 
 	`sudo pacman -S docker`
 
 2. Pull the owncloud-pi: 
 
-	`sudo docker pull astonbitecode/owncloud-pi:v0.1`
+	`sudo docker pull astonbitecode/owncloud-pi`
 
 3. Run it in docker: 
 
-	`sudo docker run -d --name oc -p 80:80 -p 443:443 -t astonbitecode/owncloud-pi:v0.1`
+	`sudo docker run -d --name oc -p 80:80 -p 443:443 -t astonbitecode/owncloud-pi`
 
 4. Setup your owncloud, by browsing to
 
@@ -35,4 +35,14 @@ or
 
 https://localhost/owncloud
 
+## Build
 
+Building from the sources offers a more up-to-date installation.
+
+In order to build, simply clone this repo and  issue:
+
+	`sudo docker build -t your_username/owncloud-pi:latest .`
+
+or simply
+
+	`sudo docker build .`
